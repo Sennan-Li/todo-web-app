@@ -1,0 +1,174 @@
+.taskLists {
+    width: 100%;
+    height: calc(100% - 120px);
+    height: calc(100% - 120px);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    cursor: pointer;
+    position: relative;
+    
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    h3 {
+        padding: 10px 0;
+    }
+    h5 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: #7a7a7a;
+    }
+    .listOptions {
+        display: grid;
+        grid-template-columns: calc(50% - 5px) calc(50% - 5px);
+        gap: 10px;
+        .taskListItem {
+            font-size: 0.3rem;
+            border-radius: 7px;
+            padding: 10px 0;
+            font-weight: bolder;
+        }
+        .defaultList{
+            display: flex;
+            padding: 10px;
+            h4 {
+                display: block;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                font-size: 1.3rem;
+                font-weight: 400;
+                margin-top: 3px;
+            }
+            .todoIcons {
+                display: block;
+                font-size: 0.9rem;
+                margin-right: 10px;
+                background-color: #000;
+                color: #fff;
+                border-radius: 10px;
+                padding: 7px;
+            }
+            .todoIcons2 {
+                background-color: grey;
+            }
+            .todoIcons3 {
+                background-color: #64b07b;
+            }
+            .todoIcons4 {
+                background-color: red;
+            }
+        }
+    }
+    .taskListItem{
+        &:hover{
+            background-color: rgba(222, 222, 222, 0.3);
+        }
+        background-color: #fff;
+        input{
+            color: #000;
+            width: calc(100% - 45px);
+            font-size: 1rem;
+            padding: 5px;
+            &:disabled{
+                opacity:1;
+            }
+        }
+    
+       
+        p {
+            padding: 0 1.5vw;
+            padding-bottom: 10px;
+            font-size: 0.8rem;
+        }
+        .taskList {
+            padding: 15px;
+            display: flex;
+            font-size: 0.9rem;
+            color: #000;
+            .listIcon {
+                display: block;
+                margin-right: 10px;
+                background-color: #4da3ca;
+                border-radius: 30px;
+                padding: 5px;
+                margin-top: 2px;
+            }
+            h4 {
+                margin-top: 3px;
+                display: block;
+                background: none;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                outline: none;
+                border: none;
+                font-size: 1rem;
+                font-weight: 400;
+            }
+        }
+        hr{
+            opacity: 0.3;
+        }
+    }
+    .myList{
+        &:nth-child(3) {
+            border-radius: 7px 7px 0 0;
+        }
+        &:last-child {
+            border-radius: 0 0 7px 7px;
+            hr {
+                display: none;
+            }
+        }
+    }
+    .listEdit {
+        input {
+            border: 1px solid;
+            border-radius: 7px;
+        }
+    }
+    .taskListItemActive {
+        background-color:rgb(102,177,115,0.1);
+        hr {
+            display: none;
+        }
+    }
+    .taskListItemNew {
+        background-color: white;
+
+    
+        .newIcon {
+            font-size: 1rem;
+            margin-top: 3px;
+            margin-left: 5px;
+            padding: 4px;
+            &:hover{
+                background-color: #fff;
+                border-radius: 5px;
+            }
+        }
+        .newListIcon{
+            font-size: 1.3rem;
+
+        }
+        .saveIcon {
+            
+            
+            color:rgb(6, 103, 6);
+            
+        }
+        .deleteIcon {
+            padding: 1px;
+            margin-top: 1px;
+            color: red;
+            font-size: 1.55rem;
+        }
+
+    }
+
+ 
+
+} 

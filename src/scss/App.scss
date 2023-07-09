@@ -1,0 +1,79 @@
+@import './header';
+
+.app {
+    width: 100vw;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    height: calc(100vh - 50px);
+    height: calc(100svh - 50px);
+    @media (max-width: 767px) {
+        display: block;
+    }
+    .lists{
+        width: 300px;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        @media (max-width: 767px) {
+            width: calc(100vw - 20px);
+        }
+        padding: 10px;
+        padding-bottom: 0;
+        background-color: #f2f2f7;
+        overflow: hidden;
+        position: relative;
+        @import './searchBar';
+        @import './taskLists';
+        @import './taskFootage';
+        .taskListsDivider {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            opacity: 0.3;
+        }
+    }
+   
+    .taskContent {
+        width: calc(-300px + 100vw);
+        height: 100%;
+        padding: 15px 0;
+        position: relative;
+        color: #3b82f7;
+        @media (max-width: 767px) {
+            width: 100vw;
+            position: absolute;
+            top: 50px;
+            left: 0;
+        }
+        @import './taskHeader';
+        @import './taskBody';
+
+        
+        
+    }
+    .specailHideForTaskContent{
+        display: block;
+        @media (max-width: 767px){
+            display: none;
+        }
+
+    }
+    .specailHideForTaskLists{
+        display: block;
+        @media (max-width: 767px){
+            display: none;
+        }
+
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+@import './hamburger';
+@import './others';
+
+
+

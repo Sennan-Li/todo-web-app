@@ -1,0 +1,90 @@
+        .taskBody{
+            width: 100%;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            height: calc(100% - 65px);
+
+            .task {
+                position: relative;
+                display: block;
+                padding: 10px 15px;
+                width: 100%;
+                display: grid;
+                grid-template-columns: 20px calc(100% - 95px);
+                &:hover{
+                    background-color: whitesmoke;
+ 
+                }
+                .checkbox {
+                    background-color: #000;
+                    margin-top: 5px;
+                    width: 100%;
+                    height: 1.5rem;
+                }
+                .inputText {
+                    background: none;
+                    color: #000;
+                    border: none;
+                    outline: none;
+                    margin-left: 10px;
+                    font-size: 1rem;
+                    resize: none;
+                    padding: 5px;
+                    &:disabled{
+                        opacity:1;
+                    }
+                }
+                .taskMenu{
+                    transition: all 500ms ease-in-out;
+                    position: absolute;
+                    top: 0;
+                    right: -190px;
+                    width: 260px;
+                    height: auto;
+                    overflow-x: hidden;
+                    padding: 9.4px;
+                    display: flex;
+                
+                    button{
+                        width: 50px;
+                        height: 30px;
+                        display: block;
+                        cursor: pointer;
+                        background-color: lightgray;
+                        outline: none;
+                        border: none;
+                        border-radius: 5px;
+                        margin-right: 5px;
+                        padding: 5px;
+                        padding-top: 7px;
+                    }
+                    .menu {
+                        transform: scale(0.7);
+                        font-size: 1rem;
+                        background: none; 
+                        margin-top: 0px;   
+                        transition: all 0.4s ease-in-out; 
+                    }
+                    .delete{ 
+                        color: red;
+                        font-size: 1rem;
+                        
+                    }
+                    .today {
+                        color: green;
+                        font-size: 1.15rem;
+                    }       
+                    
+                }
+
+                .taskMenuScroll{
+                    right: -50px;
+                    background-color: whitesmoke;
+                }
+                
+                
+            }
+            .taskActive {
+                background-color: rgb(77,163,200,0.1);
+            }
+        }

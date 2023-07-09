@@ -1,0 +1,61 @@
+.taskHeader {
+    padding: 0px 15px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+
+    .listHeading {
+        display: flex;
+        width: 100%;
+        .backIcon {
+            font-size: 1.8rem;
+            display: none;
+            margin-top: 10px;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.5;
+            }
+        @media (max-width: 767px) {
+            display: block;
+        }
+        }
+        h2{
+            margin-top: 8px;
+            font-weight: 500;
+            font-size: 1.6rem;
+        }
+        input{
+            width: calc(100% - 75px);
+            padding: 0 5px;
+            background: none;
+            font-weight: 500;
+            display: flex;
+         
+            font-size: 1.5rem;
+            color: #4da3ca;
+            border-radius: 10px;
+           
+            &:hover{
+                background: lavender;
+               
+            }
+        }
+    }
+    button {
+        border: none;
+        cursor: pointer;
+        color: #4da3ca;
+        background: none;
+        font-size: 1.6rem;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+    img {
+        margin-top: 1vw;
+        cursor: pointer;
+        height: 16px;
+        margin-right: 20px;
+        
+    }
+}

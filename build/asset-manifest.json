@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b90e312c.css",
+    "main.js": "/static/js/main.5799330f.js",
+    "static/js/787.63e47474.chunk.js": "/static/js/787.63e47474.chunk.js",
+    "static/media/hamburger.ttf": "/static/media/hamburger.931ed20f42648a573810.ttf",
+    "static/media/sennanli-logo(dark).png": "/static/media/sennanli-logo(dark).cd49a65980b50fd5baea.png",
+    "static/media/todo.png": "/static/media/todo.c4da19bf990f762da135.png",
+    "index.html": "/index.html",
+    "main.b90e312c.css.map": "/static/css/main.b90e312c.css.map",
+    "main.5799330f.js.map": "/static/js/main.5799330f.js.map",
+    "787.63e47474.chunk.js.map": "/static/js/787.63e47474.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b90e312c.css",
+    "static/js/main.5799330f.js"
+  ]
+}

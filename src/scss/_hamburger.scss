@@ -1,0 +1,34 @@
+
+.hamburger {
+    transform: scale(0.6);
+    cursor: pointer;
+    margin-top: -8px;
+    span {
+        display: block;
+        width: 32px;
+        height: 3px;
+        background-color: #4da3ca;;
+        transition: all 300ms ease-in-out;
+        transform-origin: 6px 2px;
+        border-radius: 3px;
+        transform: scale(0.8);
+    }
+    span:not(:last-child) {
+        margin-bottom: 4px;
+    }
+  } 
+  .openHamburger {
+    background-color: red;
+    span {
+        background-color: #000;
+        &:first-child {
+            transform: rotate(45deg);
+        }
+        &:nth-child(2) {
+            opacity: 0;
+        }
+        &:last-child {
+            transform: rotate(-45deg);
+        }
+    }
+}  
